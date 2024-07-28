@@ -1,0 +1,24 @@
+<svg width="1920" height="300" viewBox="0 0 1920 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1288_229)">
+<rect width="1920" height="300" fill="#2C112D"/>
+<rect x="20" y="-135.047" width="124.661" height="300" transform="rotate(-21.6309 20 -135.047)" fill="#5D0265"/>
+<rect width="124.661" height="300" transform="matrix(-0.547211 -0.836995 -0.836995 0.547211 2123.55 -46.0137)" fill="#5D0265"/>
+<rect x="146" y="243.953" width="124.661" height="300" transform="rotate(-21.6309 146 243.953)" fill="#5D0265"/>
+<rect x="-470" y="130.258" width="489" height="300" transform="rotate(-21.6309 -470 130.258)" fill="#4A0F4F" fill-opacity="0.52"/>
+<rect width="489" height="300" transform="matrix(-0.547211 -0.836995 -0.836995 0.547211 2093.27 460.292)" fill="#4A0F4F" fill-opacity="0.52"/>
+<rect x="-298" y="117.258" width="444.545" height="276.053" transform="rotate(-21.6309 -298 117.258)" fill="#4A0F4F" fill-opacity="0.52"/>
+<rect width="444.545" height="276.053" transform="matrix(-0.547211 -0.836995 -0.836995 0.547211 2057.29 301.101)" fill="#4A0F4F" fill-opacity="0.52"/>
+<rect x="-318" y="197.871" width="444.545" height="276.053" transform="rotate(-21.6309 -318 197.871)" fill="#4A0F4F" fill-opacity="0.52"/>
+<rect width="444.545" height="276.053" transform="matrix(-0.547211 -0.836995 -0.836995 0.547211 1982.32 336.83)" fill="#4A0F4F" fill-opacity="0.52"/>
+<rect x="44" y="7.92285" width="173.409" height="276.053" transform="rotate(-21.6309 44 7.92285)" fill="#4A0F4F" fill-opacity="0.52"/>
+<rect width="173.409" height="276.053" transform="matrix(-0.547211 -0.836995 -0.836995 0.547211 1998.04 -35.8584)" fill="#4A0F4F" fill-opacity="0.52"/>
+<rect x="-378" y="-26.7422" width="489" height="300" transform="rotate(-21.6309 -378 -26.7422)" fill="#4A0F4F"/>
+<rect width="489" height="300" transform="matrix(-0.547211 -0.836995 -0.836995 0.547211 2228.68 338.729)" fill="#4A0F4F"/>
+<rect x="170" y="179.923" width="173.409" height="276.053" transform="rotate(-21.6309 170 179.923)" fill="#4A0F4F" fill-opacity="0.52"/>
+</g>
+<defs>
+<clipPath id="clip0_1288_229">
+<rect width="1920" height="300" fill="white"/>
+</clipPath>
+</defs>
+</svg>
