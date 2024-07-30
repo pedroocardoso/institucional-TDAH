@@ -1393,7 +1393,9 @@
         line-height: 2.2rem;
     }
 
-
+    .footerSobre{
+        margin-top: 7rem;
+    }
 
 }
 
@@ -1459,9 +1461,9 @@
         background-color: hsla(0, 0%, 100%, 0.884);
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         color: #4a0f4f;
-        gap: 60px;
+        gap: 30px;
         padding: 20px;
         width: 100%;
         z-index: 1000;
@@ -1498,8 +1500,10 @@
 
     .menu{
         display: flex;
+        width: 53%;
         align-items: center;
-        gap: 30px;
+        justify-content: center;
+        gap: 20px;
         font-size: 1.6rem;
         font-weight: 400;
         letter-spacing: -0.6px;
@@ -1507,6 +1511,7 @@
 
     .itemMenu, .itemMenuAtivo{
         cursor: pointer;
+        color: #4a0f4f;
     }
 
     .itemMenuAtivo{
@@ -1996,7 +2001,7 @@
 
     footer{
         width: 100%;
-        height: 250px;
+        height: 260px;
         overflow: hidden;
         background-color: #edc9b5; 
         padding-top: 4rem;   
@@ -2007,13 +2012,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 10rem;
+        padding: 0 5rem;
     }
 
     footer .institucional{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 33%;
     }
 
     footer .logo{
@@ -2067,6 +2073,10 @@
         letter-spacing: -0.2px;
         margin-bottom: 5px;
         gap: 10px;
+        color: #000;
+    }
+
+    footer .contato .telefone a{
         color: #000;
     }
     
@@ -2181,6 +2191,283 @@
         border-top: 1px solid #00000031;
         width: 90%;
     }
+
+    /* ----------------- Página Sobre -------------------------------*/
+
+    .introSobre{
+        background-image: url(./images/imgSobreIntro.svg);
+        background-size: 100%;
+        padding: 8rem;
+        position: relative;   
+        margin-bottom: 3rem;
+    }
+
+    .introSobre h1{
+        color: white;
+        font-size: 3rem;
+        font-family: "Montserrat";
+        margin-left: 15rem;
+    }
+
+    .introSobre div{
+        display: flex;
+        align-items: center;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.301);
+        backdrop-filter: blur(2px);
+    }
+
+    .objetivos{
+        position: relative;
+        width: 90%;
+        display: flex;
+        gap: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .objetivos .textoObjetivo{
+        width: 60%;
+    }
+
+    .objetivos .logo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        color: #4a0f4f;
+    }
+
+    .objetivos .logo img{
+        width: 8%;
+    }
+
+    .objetivos .logo h1{
+        font-size: 2rem;
+        font-family: "Montserrat";
+        font-weight: 600;
+        margin-top: -1px;
+        margin-bottom: -4px;
+    }
+
+    .objetivos .logo h2{
+        font-size: 1.5rem;
+        font-family: "Montserrat";
+        font-weight: 500;
+        margin-bottom: -3px;
+    }
+
+    .objetivos .logo h3{
+        font-size: 1.2rem;
+        font-family: "Montserrat";
+        font-weight: 400;
+    }
+
+    .objetivos p{
+        font-size: 1.6rem;
+    }
+
+    .imgSobre{
+        object-fit: cover;
+        width: 40%;
+        height: 50rem;
+        border-radius: 0 100px;
+        align-self: center;
+    }
+
+    .introObjetivos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introObjetivos .posObjetivo{
+        width: 90%;
+        font-size: 1.6rem;
+    }
+
+    .comoAjuda{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -5rem;
+        z-index: 1;
+    }
+
+    .molduraAjuda{
+        padding-top: 13rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 130rem;
+        clip-path: ellipse(100% 43%);
+        background-color: #4a0f4f;
+    }
+
+    .molduraAjuda h3{
+        margin-top: -3.2rem;
+        width: 80%;
+        text-align: center;
+        font-family: "Montserrat";
+        font-size: 1.4rem;
+        font-weight: 300;
+        text-align: center;
+        color: white;
+        padding-bottom: 3rem;
+    }
+
+    .molduraAjuda h1{
+        text-align: center;
+        font-family: "Montserrat";
+        font-size: 3rem;
+        text-align: center;
+        color: white;
+        padding-bottom: 3rem;
+        margin-top: -9rem;
+    }
+
+    .abordagem{
+        margin-top: 5rem;
+        margin-bottom: -10.7rem;
+        color: #4a0f4f;
+        text-shadow:#fff 1.5px -1.5px, #fff -1.5px 1.5px, #fff 1.5px 1.5px, #fff -1.5px -1.5px;
+        z-index: 10;
+        font-size: 3rem;
+    }
+
+    .molduraAjuda p{
+        font-family: "Montserrat";
+        color: white;
+        font-size: 1.6rem;
+        width: 60%;
+        text-align: center;
+        line-height: 2rem;
+        margin-bottom: 12rem;
+    }
+
+    .molduraAjuda .tratamentos{
+        display: flex;
+        align-items: center;
+        width: 740px;
+        gap: 30px;
+    }
+
+    .trata{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tratamentos img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 2rem;
+    }
+
+    .imgProblemas{
+        object-position: 0  0px;
+    }
+
+    .tratamentos h2{
+        font-family: "Montserrat";
+        color: white;
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .tratamentos dt{
+        color: white;
+        font-family: "Montserrat";
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+
+    .sobreGabriela{
+        position: absolute;
+        width: 100%;
+        background-color: #fff;
+        margin-top: -24rem;
+        padding-top: 5rem;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 7rem;
+    }
+
+    .perfil{
+        min-width: 760px;
+        max-width: 90%;
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .molduraPerfil{
+        width: 273px;
+        height: 273px;
+        overflow: hidden;
+        border-radius: 200px;
+        border: 10px solid #fff;
+    }
+
+    .perfil img{
+        object-fit: cover;
+        width: 290px;
+        height: 250px;
+        scale: 150%;
+        object-position: -20px 0px;
+    }
+
+    .perfil .texto{
+        width: calc(760px - 273px);
+    }
+
+    .perfil .texto h1{
+        font-family: "montserrat";
+        color: #4a0f4f;
+        font-size: 2.6rem;
+        margin-bottom: -3px;
+    }
+    
+    .perfil .texto h2{
+        font-family: "montserrat";
+        color: #000;
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+    
+    .perfil .texto h3{
+        font-family: "montserrat";
+        color: #000;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    
+    .perfil .texto p{
+        font-family: "montserrat";
+        color: #000;
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-bottom: 5px;
+        line-height: 1.8rem;
+    }
+
+    .footerSobre{
+        margin-top: 23rem;
+    }
+    
 }
 
 @media only screen and (max-device-width: 768px) {
@@ -2346,6 +2633,7 @@
 
     .menu:hover{
         position: absolute; 
+        padding-top: 30px;
         top: 0;
         right: 0;
         height: 100vh;
@@ -3014,7 +3302,6 @@
         scale: 1.15;
     }
 
-
     .credits{
         background-color: #edc9b5;
         text-align: center;
@@ -3028,6 +3315,299 @@
         border-top: 1px solid #00000031;
         width: 90%;
     }
+
+    /* ----------------- Página Sobre -------------------------------*/
+
+    main{
+        overflow: hidden;
+    }
+
+    .introSobre{
+        background-image: url(./images/imgSobreIntro.svg);
+        background-size: 100%;
+        padding: 8rem;
+        position: relative;   
+        margin-bottom: 3rem;
+    }
+
+    .introSobre h1{
+        color: white;
+        font-size: 3rem;
+        font-family: "Montserrat";
+        margin-left: 5rem;
+    }
+
+    .introSobre div{
+        display: flex;
+        align-items: center;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.301);
+        backdrop-filter: blur(2px);
+    }
+
+    .objetivos{
+        position: relative;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .imgSobre{
+        object-position: 0 -40px;
+        object-fit: cover;
+        width: 70%;
+        height: 34rem;
+        border-radius: 0 100px;
+        align-self: center;
+    }
+
+    .objetivos .textoObjetivo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .objetivos .logo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        color: #4a0f4f;
+    }
+
+    .objetivos .logo img{
+        width: 20%;
+    }
+
+    .objetivos .logo h1{
+        font-size: 2rem;
+        font-family: "Montserrat";
+        font-weight: 600;
+        margin-top: -1px;
+        margin-bottom: -4px;
+    }
+
+    .objetivos .logo h2{
+        font-size: 1.5rem;
+        font-family: "Montserrat";
+        font-weight: 500;
+        margin-bottom: -3px;
+    }
+
+    .objetivos .logo h3{
+        font-size: 1.2rem;
+        font-family: "Montserrat";
+        font-weight: 400;
+    }
+
+    .objetivos p{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .introObjetivos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introObjetivos .posObjetivo{
+        width: 90%;
+        padding: 0% 9%;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .comoAjuda{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -5rem;
+        z-index: 1;
+    }
+
+    .molduraAjuda{
+        padding-top: 16.3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(3 * 100%);
+        height: 190rem;
+        clip-path: ellipse(100% 43%);
+        background-color: #4a0f4f;
+    }
+
+    .molduraAjuda h3{
+        margin-top: -3.2rem;
+        width: 24%;
+        text-align: center;
+        font-family: "Montserrat";
+        font-size: 1.4rem;
+        font-weight: 300;
+        text-align: center;
+        color: white;
+        padding-bottom: 3rem;
+    }
+
+    .molduraAjuda h1{
+        text-align: center;
+        font-family: "Montserrat";
+        font-size: 3rem;
+        text-align: center;
+        color: white;
+        padding-bottom: 3rem;
+        margin-top: -9rem;
+    }
+
+    .abordagem{
+        margin-top: 2rem;
+        margin-bottom: -15rem;
+        color: #4a0f4f;
+        text-shadow:#fff 1.5px -1.5px, #fff -1.5px 1.5px, #fff 1.5px 1.5px, #fff -1.5px -1.5px;
+        z-index: 10;
+        font-size: 3rem;
+    }
+
+    .molduraAjuda p{
+        font-family: "Montserrat";
+        color: white;
+        font-size: 1.6rem;
+        width: 28%;
+        text-align: center;
+        line-height: 2rem;
+        margin-bottom: 12rem;
+    }
+
+    .molduraAjuda .tratamentos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 740px;
+        gap: 30px;
+    }
+
+    .trata{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tratamentos img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 2rem;
+    }
+
+    .imgProblemas{
+        object-position: 0  -30px;
+    }
+
+    .tratamentos h2{
+        font-family: "Montserrat";
+        color: white;
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .tratamentos dt{
+        color: white;
+        font-family: "Montserrat";
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+
+    .sobreGabriela{
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        background-color: #fff;
+        margin-top: -16rem;
+        padding-top: 5rem;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0rem;
+    }
+
+    .perfil{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .molduraPerfil{
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 200px;
+        border: 10px solid #fff;
+    }
+
+    .perfil img{
+        object-fit: cover;
+        width: 200px;
+        height: 250px;
+        scale: 150%;
+        object-position: -10px 15px;
+    }
+
+    .perfil .texto{
+        width: 100%;
+    }
+
+    .perfil .texto h1{
+        font-family: "montserrat";
+        color: #4a0f4f;
+        font-size: 2.6rem;
+        margin-bottom: -3px;
+    }
+    
+    .perfil .texto h2{
+        font-family: "montserrat";
+        color: #000;
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+    
+    .perfil .texto h3{
+        font-family: "montserrat";
+        color: #000;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    
+    .perfil .texto p{
+        font-family: "montserrat";
+        color: #000;
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-bottom: 5px;
+        line-height: 1.8rem;
+    }
+
+    .footerSobre{
+        margin-top: 65rem;
+    }
+
 }
 
 @media only screen and (min-device-width: 480px) {
