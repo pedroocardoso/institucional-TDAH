@@ -141,6 +141,10 @@
         letter-spacing: -0.3px;
     }
 
+    .logoMenuSuspenso{
+        display: none;
+    }
+
     .itemMenu::after {
         content: '';
         position: absolute;
@@ -1397,6 +1401,207 @@
         margin-top: 7rem;
     }
 
+    /* --------------- Publicações -------------- */
+
+    .introPubli{
+        background-image: url(./images/imgPubliIntro.svg);
+        background-size: cover;
+        background-position: 0 -100px;
+        height: 16rem;
+    }
+
+    .introPubli div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background-color: rgba(74, 15, 79, 0.274);
+        backdrop-filter: blur(2px);
+    }
+
+    .introPubli h1{
+        font-family: "Montserrat";
+        margin-left: 10rem;
+        font-size: 3rem;
+        color: white;
+    }
+
+    .secaoArtigos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .iniciaPubli{
+        margin-top: 4rem;
+        font-family: "Montserrat";
+        font-size: 3rem;
+        letter-spacing: 5px;
+        color: #4a0f4f;
+    }
+
+    .centralizaArtigos{
+        margin-top: 4rem;
+        padding-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        max-width: 1280px;
+        background-color: rgba(247, 247, 247, 0.685);
+        border-radius: 16px;
+        gap: 2rem;
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.096);
+        padding-bottom: 6rem;
+    }
+
+    .secaoArtigos .tituloRecentesArt{
+        font-family: "Montserrat";
+        font-size: 2rem;
+        font-weight: 600;
+        padding-bottom: 0.5rem;
+        margin: 0rem 6rem 1rem 6rem;
+        border-bottom: 1px solid #adadad;
+    }
+
+    .secaoArtigos .recentes{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+
+    .recentes .divArtigo{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recentes .divArtigo p{
+        font-family: "Montserrat";
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin-top: 4px;
+    }
+    
+    .recentes .divArtigo h2{
+        font-family: "Montserrat";
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 3px;
+        margin-top: 5px;
+    }
+    
+    .recentes .divArtigo h3{
+        font-family: "Montserrat";
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 3rem;
+    }
+
+    .recentes .divArtigo button{
+        border: none;
+        background: none;
+    }
+
+    .recentes .divArtigo button a{
+        background-color: #000;
+        color: white;
+        font-family: "Montserrat";
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 3rem;
+        padding: 0.8rem 3rem;
+        border-radius: 5px;
+        transition: 0.4s;
+    }
+
+    .recentes .divArtigo button a:hover{
+        background-color: #292929;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.137);
+        padding: 1.3rem 3.5rem;
+    }
+
+    .tituloOutrosArt{
+        font-family: "Montserrat";
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding-bottom: 0.5rem;
+        margin: 0rem 6rem 3rem 6rem;
+        border-bottom: 1px solid #adadad;
+    }
+
+    .outrosArtigos .conjArtigos{
+        margin: 0 8.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 3rem;
+        column-gap: 5rem;
+    }
+
+    .outrosArtigos .divArtigo{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .outrosArtigos .divArtigo p{
+        font-family: "Montserrat";
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin-top: 4px;
+    }
+    
+    .outrosArtigos .divArtigo h2{
+        font-family: "Montserrat";
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 3px;
+        margin-top: 5px;
+    }
+    
+    .outrosArtigos .divArtigo h3{
+        font-family: "Montserrat";
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+
+    .outrosArtigos .divArtigo button{
+        border: none;
+        background: none;
+    }
+
+    .outrosArtigos .divArtigo button a{
+        background-color: #000;
+        color: white;
+        font-family: "Montserrat";
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 3rem;
+        padding: 0.6rem 1.5rem;
+        border-radius: 5px;
+        transition: 0.4s;
+    }
+
+    .outrosArtigos .divArtigo button a:hover{
+        background-color: #292929;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.137);
+        padding: 1rem 2.5rem;
+    }
+
+    .logoFinalizaSecao{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
+    .logoFinalizaSecao img{
+        width: 3rem;
+    }
+
 }
 
 @media only screen and (max-device-width: 1279px) and (min-device-width: 769px) {
@@ -1507,6 +1712,10 @@
         font-size: 1.6rem;
         font-weight: 400;
         letter-spacing: -0.6px;
+    }
+
+    .logoMenuSuspenso{
+        display: none;
     }
 
     .itemMenu, .itemMenuAtivo{
@@ -2467,6 +2676,207 @@
     .footerSobre{
         margin-top: 23rem;
     }
+
+    /* --------------- Publicações -------------- */
+
+    .introPubli{
+        background-image: url(./images/imgPubliIntro.svg);
+        background-size: cover;
+        background-position: 0 -100px;
+        height: 16rem;
+    }
+
+    .introPubli div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background-color: rgba(74, 15, 79, 0.274);
+        backdrop-filter: blur(2px);
+    }
+
+    .introPubli h1{
+        font-family: "Montserrat";
+        margin-left: 10rem;
+        font-size: 3rem;
+        color: white;
+    }
+
+    .secaoArtigos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .iniciaPubli{
+        margin-top: 4rem;
+        font-family: "Montserrat";
+        font-size: 3rem;
+        letter-spacing: 5px;
+        color: #4a0f4f;
+    }
+
+    .centralizaArtigos{
+        margin-top: 4rem;
+        padding-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        max-width: 770px;
+        background-color: rgba(247, 247, 247, 0.685);
+        border-radius: 16px;
+        gap: 2rem;
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.096);
+        padding-bottom: 6rem;
+    }
+
+    .secaoArtigos .tituloRecentesArt{
+        font-family: "Montserrat";
+        font-size: 2rem;
+        font-weight: 600;
+        padding-bottom: 0.5rem;
+        margin: 0rem 6rem 1rem 6rem;
+        border-bottom: 1px solid #adadad;
+    }
+
+    .secaoArtigos .recentes{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+
+    .recentes .divArtigo{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recentes .divArtigo p{
+        font-family: "Montserrat";
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin-top: 4px;
+    }
+    
+    .recentes .divArtigo h2{
+        font-family: "Montserrat";
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 3px;
+        margin-top: 5px;
+    }
+    
+    .recentes .divArtigo h3{
+        font-family: "Montserrat";
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 3rem;
+    }
+
+    .recentes .divArtigo button{
+        border: none;
+        background: none;
+    }
+
+    .recentes .divArtigo button a{
+        background-color: #000;
+        color: white;
+        font-family: "Montserrat";
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 3rem;
+        padding: 0.8rem 3rem;
+        border-radius: 5px;
+        transition: 0.4s;
+    }
+
+    .recentes .divArtigo button a:hover{
+        background-color: #292929;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.137);
+        padding: 1.3rem 3.5rem;
+    }
+
+    .tituloOutrosArt{
+        font-family: "Montserrat";
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding-bottom: 0.5rem;
+        margin: 0rem 6rem 3rem 6rem;
+        border-bottom: 1px solid #adadad;
+    }
+
+    .outrosArtigos .conjArtigos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 3rem;
+        column-gap: 3rem;
+    }
+
+    .outrosArtigos .divArtigo{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 12.5%;
+    }
+
+    .outrosArtigos .divArtigo p{
+        font-family: "Montserrat";
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin-top: 4px;
+    }
+    
+    .outrosArtigos .divArtigo h2{
+        font-family: "Montserrat";
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 3px;
+        margin-top: 5px;
+    }
+    
+    .outrosArtigos .divArtigo h3{
+        font-family: "Montserrat";
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+
+    .outrosArtigos .divArtigo button{
+        border: none;
+        background: none;
+    }
+
+    .outrosArtigos .divArtigo button a{
+        background-color: #000;
+        color: white;
+        font-family: "Montserrat";
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 3rem;
+        padding: 0.6rem 1.5rem;
+        border-radius: 5px;
+        transition: 0.4s;
+    }
+
+    .outrosArtigos .divArtigo button a:hover{
+        background-color: #292929;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.137);
+        padding: 1rem 2.5rem;
+    }
+
+    .logoFinalizaSecao{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
+    .logoFinalizaSecao img{
+        width: 3rem;
+    }
     
 }
 
@@ -2611,7 +3021,7 @@
         left: 50%;
         width: 0;
         height: 1px;
-        width: 25%;
+        width: 60%;
         left: 3rem;
         transform: translateX(0);
         background-color: #4a0f4f;
@@ -2633,7 +3043,7 @@
 
     .menu:hover{
         position: absolute; 
-        padding-top: 30px;
+        /* padding-top: 50px; */
         top: 0;
         right: 0;
         height: 100vh;
@@ -2650,6 +3060,41 @@
         color: black;
         padding-right: 5rem;
         padding-left: 3rem;
+    }
+
+    .logoMenuSuspenso{
+        display: none;
+    }
+
+    .menu:hover .logoMenuSuspenso{
+        display: flex;
+        align-items: center;
+        padding-top: 13px;
+        margin-left: 3rem;
+        margin-bottom: 2rem;
+        max-width: 26rem;
+    }
+
+    .logoMenuSuspenso img{
+        width: 23%;
+        padding-right: 12px;
+    }
+
+    .logoMenuSuspenso .textoLogo h1{
+        font-family: "Montserrat";
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-top: 2px;
+        margin-bottom: -4px;
+        color: #4a0f4f;
+    }
+
+    .logoMenuSuspenso .textoLogo h4{
+        font-family: "Montserrat";
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #27042b;
+        letter-spacing: 0.4px;
     }
 
     .btNav{
@@ -3606,6 +4051,223 @@
 
     .footerSobre{
         margin-top: 65rem;
+    }
+
+    /* --------------- Publicações -------------- */
+
+    .introPubli{
+        background-image: url(./images/imgPubliIntro.svg);
+        background-size: cover;
+        background-position: 0 -30px;
+        height: 16rem;
+    }
+
+    .introPubli div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background-color: rgba(74, 15, 79, 0.274);
+        backdrop-filter: blur(0.4px);
+    }
+
+    .introPubli h1{
+        font-family: "Montserrat";
+        margin-left: 4rem;
+        font-size: 3rem;
+        color: white;
+    }
+
+    .secaoArtigos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .iniciaPubli{
+        display: none;
+    }
+
+    .centralizaArtigos{
+        margin-top: 4rem;
+        padding-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        background-color: rgba(247, 247, 247, 0.685);
+        border-radius: 16px;
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.096);
+        padding-bottom: 3rem;
+    }
+
+    .secaoArtigos .tituloRecentesArt{
+        font-family: "Montserrat";
+        font-size: 2rem;
+        font-weight: 600;
+        padding-bottom: 0.5rem;
+        margin: 0rem 2rem 1rem 2rem;
+        border-bottom: 1px solid #adadad;
+    }
+
+    .secaoArtigos .recentes{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .recentes img{
+        object-fit: cover;
+        width: 80%;
+        height: 16rem;
+    }
+
+    .recentes .divArtigo{
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 7rem;
+    }
+
+    .recentes .divArtigo p{
+        width: 80%;
+        font-family: "Montserrat";
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin-top: 4px;
+    }
+    
+    .recentes .divArtigo h2{
+        width: 80%;
+        font-family: "Montserrat";
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 3px;
+        margin-top: 5px;
+    }
+    
+    .recentes .divArtigo h3{
+        width: 80%;
+        font-family: "Montserrat";
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 5rem;
+    }
+
+    .recentes .divArtigo button{
+        border: none;
+        background: none;
+    }
+
+    .recentes .divArtigo button a{
+        background-color: #000;
+        color: white;
+        font-family: "Montserrat";
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 3rem;
+        padding: 0.8rem 3rem;
+        border-radius: 5px;
+        transition: 0.4s;
+    }
+
+    .recentes .divArtigo button a:hover{
+        background-color: #292929;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.137);
+        padding: 1.3rem 3.5rem;
+    }
+
+    .tituloOutrosArt{
+        font-family: "Montserrat";
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding-bottom: 0.5rem;
+        margin: 0rem 6rem 3rem 6rem;
+        border-bottom: 1px solid #adadad;
+    }
+
+    .outrosArtigos .conjArtigos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .outrosArtigos .divArtigo{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 12.5%;
+        margin-bottom: 3rem;
+    }
+
+    .outrosArtigos img{
+        object-fit: cover;
+        width: 70%;
+        height: 17rem;
+    }
+
+    .outrosArtigos .divArtigo p{
+        width: 70%;
+        font-family: "Montserrat";
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin-top: 4px;
+    }
+    
+    .outrosArtigos .divArtigo h2{
+        width: 70%;
+        font-family: "Montserrat";
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 3px;
+        margin-top: 5px;
+    }
+    
+    .outrosArtigos .divArtigo h3{
+        width: 70%;
+        font-family: "Montserrat";
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+
+    .outrosArtigos .divArtigo button{
+        border: none;
+        background: none;
+    }
+
+    .outrosArtigos .divArtigo button a{
+        background-color: #000;
+        color: white;
+        font-family: "Montserrat";
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 3rem;
+        padding: 0.6rem 1.5rem;
+        border-radius: 5px;
+        transition: 0.4s;
+    }
+
+    .outrosArtigos .divArtigo button a:hover{
+        background-color: #292929;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.137);
+        padding: 1rem 2.5rem;
+    }
+
+    .logoFinalizaSecao{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
+    .logoFinalizaSecao img{
+        width: 3rem;
     }
 
 }
