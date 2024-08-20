@@ -795,11 +795,6 @@
         font-weight: 500;
     }
 
-    footer .redes .instagram i{
-        color: #4a0f4f;
-        font-size: 30px;
-    }
-
     footer .redes .facebook i{
         color: #fff;
         font-size: 24px;
@@ -815,11 +810,18 @@
         align-items: center;
         justify-content: center;
         padding-top: 2px;
-        background-color: #ffffff89;
+        background-color: #4a0f4f;
         width: 35px;
         height: 35px;
         border-radius: 5px;
         transition: background-color 0.5s, scale 1s;
+        overflow: hidden;
+    }
+
+    footer .links .instagram img{
+        width: 100%;
+        height: 100%;
+        scale: 115%;
     }
 
     footer .links .instagram:hover{
@@ -1506,6 +1508,7 @@
 
     .recentes .divArtigo button a{
         background-color: #000;
+        width: fit-content;
         color: white;
         font-family: "Montserrat";
         font-size: 1.5rem;
@@ -1514,6 +1517,7 @@
         padding: 0.8rem 3rem;
         border-radius: 5px;
         transition: 0.4s;
+        cursor: pointer;
     }
 
     .recentes .divArtigo button a:hover{
@@ -1543,6 +1547,20 @@
         width: 90%;
         display: flex;
         flex-direction: column;
+    }
+
+    .recentes .divArtigo img{
+        width: 100%;
+        height: 250px;
+        border-radius: 4px;
+        object-fit: cover;
+    }
+
+    .outrosArtigos .divArtigo img{
+        width: 350px;
+        height: 200px;
+        border-radius: 4px;
+        object-fit: cover;
     }
 
     .outrosArtigos .divArtigo p{
@@ -1602,6 +1620,331 @@
         width: 3rem;
     }
 
+    /* --------------- Estrutura Artigo ---------------- */
+
+    .estruturaArtigo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .voltaPag{
+        margin-top: 3rem;
+        width: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .voltaPag .volta, .voltaPag .proximo{
+        font-family: "Montserrat";
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #4a0f4f;
+        padding: 0.6rem 1rem;
+        border-radius: 7px;
+        transition: 0.6s;
+    }
+
+    .voltaPag .volta:hover, .voltaPag .proximo:hover{
+        background-color: #4a0f4f;
+        color: white;
+        
+    }
+
+    .voltaPag .volta i{
+        font-size: 1.6rem;
+        padding-right: 0rem;
+        color: #4a0f4f;
+    }
+
+    .voltaPag .proximo i{
+        font-size: 1.6rem;
+        padding-left: 0rem;
+        color: #4a0f4f;
+    }
+
+    .voltaPag .volta:hover i, .voltaPag .proximo:hover i{
+        color: white;
+    }
+
+    .centralizaConteudoArtigo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudoArt{
+        width: 1000px;
+        margin-top: 3rem;
+    }
+
+    .introArtigo h1{
+        font-family: "Montserrat";
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .introArtigo h3{
+        font-family: "Montserrat";
+        text-align: justify;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #6e6e6e;
+        margin-bottom: 0.5rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #cacaca;
+    }
+
+    .introArtigo h3 a{
+        font-family: "Montserrat";
+        color: #4a0f4f;
+    }
+
+    .introArtigo h3 span{
+        font-family: "Montserrat";
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #6e6e6e;
+    }
+
+    .redesArtigo{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .redesArtigo a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 4px;
+        transition: scale 0.3s;
+        overflow: hidden;
+    }
+
+    .redesArtigo a:hover{
+        scale: 130%;
+    }
+
+    .redesArtigo .face{
+        background-color: #3b5998;
+    }
+
+    .redesArtigo .face i{
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .redesArtigo .wpp{
+        background-color: #25D366;
+    }
+
+    .redesArtigo .wpp i{
+        font-size: 2rem;
+        color: white;
+    }    
+
+    .redesArtigo a img{
+        width: 3rem;
+        height: 3rem;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    .figuraIntro{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .figuraIntro img{
+        object-fit: cover;
+        width: 100%;
+        height: 500px;
+        border-radius: 12px;
+    }
+
+    figure h5{
+        font-family: "Montserrat";
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #7a7a7a;
+        margin-top: 3px;
+    }
+
+    .desenvolvimentoArtigo p, .desenvolvimentoArtigo p strong, .desenvolvimentoArtigo li strong{
+        font-family: "Montserrat";
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        text-align: justify;
+        margin-bottom: 1.5rem;
+    }
+
+    .desenvolvimentoArtigo li{
+        font-family: "Montserrat";
+        font-size: 1.6rem;
+        line-height: 2rem;
+        text-align: justify;
+        margin-bottom: 1.2rem;
+        margin-left: 4rem;
+    }
+
+    .desenvolvimentoArtigo h2{
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .desenvolvimentoArtigo .textoImg{
+        position: relative;
+        display: flex;
+        gap: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .desenvolvimentoArtigo .textoImg figure{
+        width: 45%;
+    }
+
+    .desenvolvimentoArtigo .textoImg img{
+        object-fit: cover;
+        width: 100%;
+        max-height: 35rem;
+        border-radius: 8px;
+    }
+
+    .desenvolvimentoArtigo .textoImg figure h5{
+        text-align: justify;
+    }
+
+    .desenvolvimentoArtigo .textoImg p{
+        width: 55%;
+    }
+
+    .desenvolvimentoArtigo .textoImg .sideImgText{
+        width: 55%;
+    }
+
+    .desenvolvimentoArtigo .textoImg .sideImgText p{
+        width: 100%;
+    }
+
+    .textoImgFinal{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .desenvolvimentoArtigo .textoImgFinal img{
+        width: 40%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+        object-position: 0 -20px;
+    }
+
+    .desenvolvimentoArtigo .textoImgFinal figure h5{
+        text-align: justify;
+    }
+
+    .desenvolvimentoArtigo .textoImgFinal p{
+        width: 75%;
+    }
+
+    .finalizaArtigo h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .finalizaArtigo{
+        border-top: 1px solid #e0e0e0;
+        border-bottom: 1px solid #949494;
+        padding: 1rem 4rem 0 4rem;
+    }
+
+    .bibliografia{
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .bibliografia li{
+        margin-left: 2rem;
+        font-family: "Montserrat";
+        font-size: 1.5rem;
+        letter-spacing: -0.2px;
+        color: #5e5e5e;
+    }
+
+    .desenvolvimentoArtigo .logoFinalizaSecao{
+        padding-bottom: 3rem;
+    }
+    
+    .leiaTambem{
+        position: relative;
+    }
+
+    .leiaTambem h1{
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-family: "Montserrat";
+    }
+    
+    .conjuntoDemosArtigos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .conjuntoDemosArtigos a{
+        width: 30%;
+        color: black;
+        cursor: pointer;
+        transition: scale 0.4s;
+    }
+
+    .conjuntoDemosArtigos a:hover{
+        scale: 110%;
+    }
+
+    .conjuntoDemosArtigos a img{
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    .conjuntoDemosArtigos a h2{
+        font-family: "Montserrat";
+        font-size: 1.7rem;
+        margin-top: 2px;
+    }
+
+    .conjuntoDemosArtigos a p{
+        font-family: "Montserrat";
+        font-size: 1.4rem;
+        text-align: justify;
+        margin-top: 2px;
+    }
+
+    .imgUCan{
+        object-position: 0 -200px;
+    }
+
+    
+
+
 }
 
 @media only screen and (max-device-width: 1279px) and (min-device-width: 769px) {
@@ -1621,6 +1964,7 @@
         border-radius: 100px;
         animation: pulse 2s infinite;
         transition: scale 1s;
+        z-index: 20000;
     }
 
     .btWpp:hover{
@@ -2358,11 +2702,18 @@
         align-items: center;
         justify-content: center;
         padding-top: 2px;
-        background-color: #ffffff89;
+        background-color: #4a0f4f;
         width: 35px;
         height: 35px;
         border-radius: 5px;
         transition: background-color 0.5s, scale 1s;
+        overflow: hidden;
+    }
+
+    footer .links .instagram img{
+        width: 100%;
+        height: 100%;
+        scale: 115%;
     }
 
     footer .links .instagram:hover{
@@ -2399,6 +2750,280 @@
     .credits p{
         border-top: 1px solid #00000031;
         width: 90%;
+    }
+
+    /*--------------------Página Testes---------------------------*/
+    
+    .indice{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 160px;
+        background-image: url(./images/indiceBG.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 2rem;
+    }
+
+    .indice h1{
+        margin-left: 10rem;
+        font-size: 3.6rem;
+        color: #fff;
+        letter-spacing: 1.2px;
+    }
+
+    .indice img{
+        height: 100%;
+        width: 350px;
+        object-fit: cover;
+        object-position: 180px -40px;
+        opacity: 0.2;
+    }
+
+    .aviso{
+        position: relative;
+        width: 75%;
+        margin-left: 12.5%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+        border: 2px solid #4a0f4f;
+        border-radius: 10px;
+        padding-bottom: 10px;
+    }
+
+    .aviso .titulo{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        width: 100%;
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+        border-bottom: 1px solid #4a0f4f;
+        padding: 10px 0 4px 0;
+        color: white;
+        background-color: #4a0f4f;
+        margin-bottom: 10px;
+    }
+
+    .aviso .titulo i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 18px;
+        font-size: 3.2rem;
+        color: white;
+    }
+
+    .aviso .titulo h1{
+        color: #fff;
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+
+    .aviso p{
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0 30px;
+        margin-bottom: 10px;
+    }
+
+    .bodyTestes{
+        position: relative;
+    }
+
+    .emDesenvolvimento{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #00000028;
+        backdrop-filter: blur(2px);
+        z-index: 10;
+    }
+
+    .emDesenvolvimento div{
+        position: sticky;
+        left: 35%;
+        top: 30%;
+        padding: 7rem 0rem;
+        text-align: center;
+        background-color: #edc9b5f1;
+        font-size: 3rem;
+        font-weight: 600;
+        box-shadow: 0px 0px 13px 6px rgba(0, 0, 0, 0.281);
+    }
+
+    .emDesenvolvimento i{
+        font-size: 4rem;
+        color: #4a0f4f;
+        padding-bottom: 1rem;
+    }
+
+    .listaTestes{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .containerTestes{
+        
+        width: 80%;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        padding-left: 0;
+        margin-bottom: 4rem;
+        column-gap: 5%;
+    }
+
+    .corpoTeste{
+        margin-bottom: 3rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .corpoTeste img{
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .corpoTeste h1{
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+    }
+
+    .corpoTeste p{
+        font-size: 1.3rem;
+        margin-bottom: 25px;
+        font-weight: 400;
+    }
+
+    .corpoTeste button{
+        padding: 8px 10px;
+        border-radius: 20px;
+        font-size: 1.4rem;
+        font-weight: 400;
+        background-color: #4a0f4f;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    /* ------------- Estilo Formularios ----------*/
+
+    .container {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 5rem;
+    }
+
+    form h2{
+        margin-bottom: 1rem;
+        font-family: "Montserrat";
+        font-size: 2rem;
+
+    }
+    
+    label{
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 1.6rem;
+        cursor: pointer;
+        line-height: 23px;
+    }
+    
+    .progress-bar {
+        position: relative;
+        width: 100%;
+        height: 25px;
+        background-color: #f3f3f3;
+        border-radius: 25px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    
+    .progress {
+        height: 100%;
+        background-color: #4caf50;
+        width: 0%;
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .question-container {
+        display: none;
+        margin-left: 1rem;
+    }
+    
+    .button-container {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .button-container button {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-family: "Montserrat";
+        font-weight: 500;
+        border-radius: 8px;
+        border: 1px solid #0000003a;
+        cursor: pointer;
+    }
+
+    .testConclusion{
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(1.2px);
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    
+    .contentConclusion{
+        margin: 6rem 3rem;
+        background-color: #fff;
+        border-radius: 7px;
+        box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.364);
+    }
+
+    .contentConclusion h1{
+        background-color: #4a0f4f;
+        color: #fff;
+        border-radius: 7px 7px 0px 0px;
+        border-bottom: 1px solid #000;
+        width: 100%;
+        font-size: 1.8rem;
+        padding: 1rem 20rem 0.2rem 1rem;
+        
+    }
+
+    .contentConclusion .result{
+        display: flex;
+        gap: 0.5rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+        width: 100%;
+        padding: 2rem 20rem 2rem 1rem;
     }
 
     /* ----------------- Página Sobre -------------------------------*/
@@ -2821,6 +3446,20 @@
         margin-left: 12.5%;
     }
 
+    .recentes .divArtigo img{
+        width: 100%;
+        height: 200px;
+        border-radius: 4px;
+        object-fit: cover;
+    }
+
+    .outrosArtigos .divArtigo img{
+        width: 100%;
+        height: 150px;
+        border-radius: 4px;
+        object-fit: cover;
+    }
+
     .outrosArtigos .divArtigo p{
         font-family: "Montserrat";
         font-size: 1.2rem;
@@ -2878,6 +3517,329 @@
         width: 3rem;
     }
     
+    /* --------------- Estrutura Artigo ---------------- */
+
+    .estruturaArtigo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .voltaPag{
+        margin-top: 3rem;
+        width: 740px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .voltaPag .volta, .voltaPag .proximo{
+        font-family: "Montserrat";
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #4a0f4f;
+        padding: 0.6rem 1rem;
+        border-radius: 7px;
+        transition: 0.6s;
+    }
+
+    .voltaPag .volta:hover, .voltaPag .proximo:hover{
+        background-color: #4a0f4f;
+        color: white;
+        
+    }
+
+    .voltaPag .volta i{
+        font-size: 1.6rem;
+        padding-right: 0rem;
+        color: #4a0f4f;
+    }
+
+    .voltaPag .proximo i{
+        font-size: 1.6rem;
+        padding-left: 0rem;
+        color: #4a0f4f;
+    }
+
+    .voltaPag .volta:hover i, .voltaPag .proximo:hover i{
+        color: white;
+    }
+
+    .centralizaConteudoArtigo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudoArt{
+        width: 700px;
+        margin-top: 3rem;
+    }
+
+    .introArtigo h1{
+        font-family: "Montserrat";
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .introArtigo h3{
+        font-family: "Montserrat";
+        text-align: justify;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #6e6e6e;
+        margin-bottom: 0.5rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #cacaca;
+    }
+
+    .introArtigo h3 a{
+        font-family: "Montserrat";
+        color: #4a0f4f;
+    }
+
+    .introArtigo h3 span{
+        font-family: "Montserrat";
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #6e6e6e;
+    }
+
+    .redesArtigo{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .redesArtigo a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 4px;
+        transition: scale 0.3s;
+        overflow: hidden;
+    }
+
+    .redesArtigo a:hover{
+        scale: 130%;
+    }
+
+    .redesArtigo .face{
+        background-color: #3b5998;
+    }
+
+    .redesArtigo .face i{
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .redesArtigo .wpp{
+        background-color: #25D366;
+    }
+
+    .redesArtigo .wpp i{
+        font-size: 2rem;
+        color: white;
+    }    
+
+    .redesArtigo a img{
+        width: 3rem;
+        height: 3rem;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    .figuraIntro{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .figuraIntro img{
+        object-fit: cover;
+        width: 100%;
+        height: 500px;
+        border-radius: 12px;
+    }
+
+    figure h5{
+        font-family: "Montserrat";
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #7a7a7a;
+        margin-top: 3px;
+    }
+
+    .desenvolvimentoArtigo p, .desenvolvimentoArtigo p strong, .desenvolvimentoArtigo li strong{
+        font-family: "Montserrat";
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        text-align: justify;
+        margin-bottom: 1.5rem;
+    }
+
+    .desenvolvimentoArtigo li{
+        font-family: "Montserrat";
+        font-size: 1.6rem;
+        line-height: 2rem;
+        text-align: justify;
+        margin-bottom: 1.2rem;
+        margin-left: 4rem;
+    }
+
+    .desenvolvimentoArtigo h2{
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .desenvolvimentoArtigo .textoImg{
+        position: relative;
+        display: flex;
+        gap: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .desenvolvimentoArtigo .textoImg figure{
+        width: 45%;
+    }
+
+    .desenvolvimentoArtigo .textoImg img{
+        object-fit: cover;
+        width: 100%;
+        max-height: 35rem;
+        border-radius: 8px;
+    }
+
+    .desenvolvimentoArtigo .textoImg figure h5{
+        text-align: justify;
+    }
+
+    .desenvolvimentoArtigo .textoImg p{
+        width: 55%;
+    }
+
+    .desenvolvimentoArtigo .textoImg .sideImgText{
+        width: 55%;
+    }
+
+    .desenvolvimentoArtigo .textoImg .sideImgText p{
+        width: 100%;
+    }
+
+    .textoImgFinal{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .desenvolvimentoArtigo .textoImgFinal img{
+        width: 40%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+        object-position: 0 -20px;
+    }
+
+    .desenvolvimentoArtigo .textoImgFinal figure h5{
+        text-align: justify;
+    }
+
+    .desenvolvimentoArtigo .textoImgFinal p{
+        width: 75%;
+    }
+
+    .finalizaArtigo h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .finalizaArtigo{
+        border-top: 1px solid #e0e0e0;
+        border-bottom: 1px solid #949494;
+        padding: 1rem 4rem 0 4rem;
+    }
+
+    .bibliografia{
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .bibliografia li{
+        margin-left: 2rem;
+        font-family: "Montserrat";
+        font-size: 1.5rem;
+        letter-spacing: -0.2px;
+        color: #5e5e5e;
+    }
+
+    .desenvolvimentoArtigo .logoFinalizaSecao{
+        padding-bottom: 3rem;
+    }
+    
+    .leiaTambem{
+        position: relative;
+    }
+
+    .leiaTambem h1{
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-family: "Montserrat";
+    }
+    
+    .conjuntoDemosArtigos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .conjuntoDemosArtigos a{
+        width: 30%;
+        color: black;
+        cursor: pointer;
+        transition: scale 0.4s;
+    }
+
+    .conjuntoDemosArtigos a:hover{
+        scale: 110%;
+    }
+
+    .conjuntoDemosArtigos a img{
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    .conjuntoDemosArtigos a h2{
+        font-family: "Montserrat";
+        font-size: 1.7rem;
+        margin-top: 2px;
+    }
+
+    .conjuntoDemosArtigos a p{
+        font-family: "Montserrat";
+        font-size: 1.4rem;
+        text-align: justify;
+        margin-top: 2px;
+    }
+    
+    .imgUCan{
+        object-position: 0 -100px;
+    }
+
+
 }
 
 @media only screen and (max-device-width: 768px) {
@@ -3723,6 +4685,13 @@
         height: 35px;
         border-radius: 5px;
         transition: background-color 0.5s, scale 1s;
+        overflow: hidden;
+    }
+
+    footer .links .instagram img{
+        width: 100%;
+        height: 100%;
+        scale: 115%;
     }
 
     footer .links .instagram:hover{
@@ -3759,6 +4728,280 @@
         padding: 2rem;
         border-top: 1px solid #00000031;
         width: 90%;
+    }
+
+    /*--------------------Página Testes---------------------------*/
+    
+    .indice{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 160px;
+        background-image: url(./images/indiceBG.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 2rem;
+    }
+
+    .indice h1{
+        margin-left: 10rem;
+        font-size: 3.6rem;
+        color: #fff;
+        letter-spacing: 1.2px;
+    }
+
+    .indice img{
+        height: 100%;
+        width: 350px;
+        object-fit: cover;
+        object-position: 180px -40px;
+        opacity: 0.2;
+    }
+
+    .aviso{
+        position: relative;
+        width: 75%;
+        margin-left: 12.5%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+        border: 2px solid #4a0f4f;
+        border-radius: 10px;
+        padding-bottom: 10px;
+    }
+
+    .aviso .titulo{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        width: 100%;
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+        border-bottom: 1px solid #4a0f4f;
+        padding: 10px 0 4px 0;
+        color: white;
+        background-color: #4a0f4f;
+        margin-bottom: 10px;
+    }
+
+    .aviso .titulo i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 18px;
+        font-size: 3.2rem;
+        color: white;
+    }
+
+    .aviso .titulo h1{
+        color: #fff;
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+
+    .aviso p{
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0 30px;
+        margin-bottom: 10px;
+    }
+
+    .bodyTestes{
+        position: relative;
+    }
+
+    .emDesenvolvimento{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #00000028;
+        backdrop-filter: blur(2px);
+        z-index: 10;
+    }
+
+    .emDesenvolvimento div{
+        position: sticky;
+        left: 35%;
+        top: 30%;
+        padding: 7rem 0rem;
+        text-align: center;
+        background-color: #edc9b5f1;
+        font-size: 3rem;
+        font-weight: 600;
+        box-shadow: 0px 0px 13px 6px rgba(0, 0, 0, 0.281);
+    }
+
+    .emDesenvolvimento i{
+        font-size: 4rem;
+        color: #4a0f4f;
+        padding-bottom: 1rem;
+    }
+
+    .listaTestes{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .containerTestes{
+        justify-content: center;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 250px);
+        padding-left: 0;
+        margin-bottom: 4rem;
+        column-gap: 5%;
+    }
+
+    .corpoTeste{
+        margin-bottom: 3rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .corpoTeste img{
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .corpoTeste h1{
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+    }
+
+    .corpoTeste p{
+        font-size: 1.3rem;
+        margin-bottom: 25px;
+        font-weight: 400;
+    }
+
+    .corpoTeste button{
+        padding: 8px 10px;
+        border-radius: 20px;
+        font-size: 1.4rem;
+        font-weight: 400;
+        background-color: #4a0f4f;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    /* ------------- Estilo Formularios ----------*/
+
+    .container {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 5rem;
+    }
+
+    form h2{
+        margin-bottom: 1rem;
+        font-family: "Montserrat";
+        font-size: 2rem;
+
+    }
+    
+    label{
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 1.6rem;
+        cursor: pointer;
+        line-height: 23px;
+    }
+    
+    .progress-bar {
+        position: relative;
+        width: 100%;
+        height: 25px;
+        background-color: #f3f3f3;
+        border-radius: 25px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    
+    .progress {
+        height: 100%;
+        background-color: #4caf50;
+        width: 0%;
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .question-container {
+        display: none;
+        margin-left: 1rem;
+    }
+    
+    .button-container {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .button-container button {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-family: "Montserrat";
+        font-weight: 500;
+        border-radius: 8px;
+        border: 1px solid #0000003a;
+        cursor: pointer;
+    }
+
+    .testConclusion{
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(1.2px);
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    
+    .contentConclusion{
+        margin: 6rem 3rem;
+        background-color: #fff;
+        border-radius: 7px;
+        box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.364);
+    }
+
+    .contentConclusion h1{
+        background-color: #4a0f4f;
+        color: #fff;
+        border-radius: 7px 7px 0px 0px;
+        border-bottom: 1px solid #000;
+        width: 100%;
+        font-size: 1.8rem;
+        padding: 1rem 20rem 0.2rem 1rem;
+        
+    }
+
+    .contentConclusion .result{
+        display: flex;
+        gap: 0.5rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+        width: 100%;
+        padding: 2rem 20rem 2rem 1rem;
     }
 
     /* ----------------- Página Sobre -------------------------------*/
@@ -4269,6 +5512,336 @@
     .logoFinalizaSecao img{
         width: 3rem;
     }
+
+    /* --------------- Estrutura Artigo ---------------- */
+
+    .estruturaArtigo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .voltaPag{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .voltaPag .volta, .voltaPag .proximo{
+        font-family: "Montserrat";
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #4a0f4f;
+        padding: 0.6rem 1rem;
+        border-radius: 7px;
+        transition: 0.6s;
+    }
+
+    .voltaPag .volta:hover, .voltaPag .proximo:hover{
+        background-color: #4a0f4f;
+        color: white;
+        
+    }
+
+    .voltaPag .volta i{
+        font-size: 1.6rem;
+        padding-right: 0rem;
+        color: #4a0f4f;
+    }
+
+    .voltaPag .proximo i{
+        font-size: 1.6rem;
+        padding-left: 0rem;
+        color: #4a0f4f;
+    }
+
+    .voltaPag .volta:hover i, .voltaPag .proximo:hover i{
+        color: white;
+    }
+
+    .centralizaConteudoArtigo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudoArt{
+        width: 80%;
+        margin-top: 3rem;
+    }
+
+    .introArtigo h1{
+        font-family: "Montserrat";
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .introArtigo h3{
+        font-family: "Montserrat";
+        text-align: justify;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #6e6e6e;
+        margin-bottom: 0.5rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #cacaca;
+    }
+
+    .introArtigo h3 a{
+        font-family: "Montserrat";
+        color: #4a0f4f;
+    }
+
+    .introArtigo h3 span{
+        font-family: "Montserrat";
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #6e6e6e;
+    }
+
+    .redesArtigo{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .redesArtigo a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 4px;
+        transition: scale 0.3s;
+        overflow: hidden;
+    }
+
+    .redesArtigo a:hover{
+        scale: 130%;
+    }
+
+    .redesArtigo .face{
+        background-color: #3b5998;
+    }
+
+    .redesArtigo .face i{
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .redesArtigo .wpp{
+        background-color: #25D366;
+    }
+
+    .redesArtigo .wpp i{
+        font-size: 2rem;
+        color: white;
+    }    
+
+    .redesArtigo a img{
+        width: 3rem;
+        height: 3rem;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    .figuraIntro{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .figuraIntro img{
+        object-fit: cover;
+        width: 100%;
+        height: 500px;
+        border-radius: 12px;
+    }
+
+    figure h5{
+        font-family: "Montserrat";
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #7a7a7a;
+        margin-top: 3px;
+    }
+
+    .desenvolvimentoArtigo p, .desenvolvimentoArtigo p strong, .desenvolvimentoArtigo li strong{
+        font-family: "Montserrat";
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        text-align: justify;
+        margin-bottom: 1.5rem;
+    }
+
+    .desenvolvimentoArtigo li{
+        font-family: "Montserrat";
+        font-size: 1.6rem;
+        line-height: 2rem;
+        text-align: justify;
+        margin-bottom: 1.2rem;
+        margin-left: 4rem;
+    }
+
+    .desenvolvimentoArtigo h2{
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .desenvolvimentoArtigo .textoImg{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .desenvolvimentoArtigo .textoImg figure{
+        width: 100%;
+    }
+
+    .desenvolvimentoArtigo .textoImg img{
+        object-fit: cover;
+        width: 100%;
+        max-height: 35rem;
+        border-radius: 8px;
+    }
+
+    .desenvolvimentoArtigo .textoImg figure h5{
+        text-align: justify;
+    }
+
+    .desenvolvimentoArtigo .textoImg p{
+        width: 100%;
+    }
+
+    .desenvolvimentoArtigo .textoImg .sideImgText{
+        width: 100%;
+    }
+
+    .desenvolvimentoArtigo .textoImg .sideImgText p{
+        width: 100%;
+    }
+
+    .textoImgFinal{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .desenvolvimentoArtigo .textoImgFinal img{
+        width: 40%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+        object-position: 0 -20px;
+    }
+
+    .desenvolvimentoArtigo .textoImgFinal figure h5{
+        text-align: justify;
+    }
+
+    .desenvolvimentoArtigo .textoImgFinal p{
+        width: 75%;
+    }
+
+    .finalizaArtigo h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .finalizaArtigo{
+        border-top: 1px solid #e0e0e0;
+        border-bottom: 1px solid #949494;
+        padding: 1rem 4rem 0 4rem;
+    }
+
+    .bibliografia{
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .bibliografia li{
+        margin-left: 2rem;
+        font-family: "Montserrat";
+        font-size: 1.5rem;
+        letter-spacing: -0.2px;
+        color: #5e5e5e;
+    }
+
+    .desenvolvimentoArtigo .logoFinalizaSecao{
+        padding-bottom: 3rem;
+    }
+    
+    .leiaTambem{
+        position: relative;
+    }
+
+    .leiaTambem h1{
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-family: "Montserrat";
+    }
+    
+    .conjuntoDemosArtigos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .demoArtigo3{
+        display: none;
+    }
+
+    .conjuntoDemosArtigos a{
+        width: 80%;
+        color: black;
+        cursor: pointer;
+        transition: scale 0.4s;
+    }
+
+    .conjuntoDemosArtigos a:hover{
+        scale: 110%;
+    }
+
+    .conjuntoDemosArtigos a img{
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    .conjuntoDemosArtigos a h2{
+        font-family: "Montserrat";
+        font-size: 1.7rem;
+        margin-top: 2px;
+        text-align: center;
+    }
+
+    .conjuntoDemosArtigos a p{
+        font-family: "Montserrat";
+        font-size: 1.4rem;
+        text-align: center;
+        margin-top: 2px;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .imgUCan{
+        object-position: 0 -150px;
+    }
+
 
 }
 
